@@ -1,0 +1,86 @@
+:root {
+  --mainColor: #260303;
+}
+
+body {
+  color: var(--mainColor);
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  letter-spacing: 0.9px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+::selection {
+  color: black;
+  background-color: rgb(233, 14, 14);
+}
+
+a,p {
+  cursor: pointer;
+      color: var(--mainColor);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#loginBtn {
+  color: #fff;
+  background-color: #492422;
+  font-size: 17px;
+  font-weight: bold;
+
+}
+#loginBtn:hover{
+  background-color: transparent;
+  color:var(--mainColor) ;
+border: solid black 1px;
+transition: 0.5s all ;
+}
+
+main {
+  min-height: 100vh;
+  background-image: url("../images/bg.avif");
+  background-size: cover;
+  background-position: center;
+}
+#signupBtn{
+    color: #fff;
+      background-color: #492422;
+      font-size: 17px;
+      font-weight: bold;
+}
+#signupBtn:hover {
+  background-color: transparent;
+  color: var(--mainColor);
+  border: solid black 1px;
+  transition: 0.5s all;
+}
+
+main .form-control:focus {
+  border-color: var(--mainColor);
+  box-shadow: 0 0 0 0.25rem rgba(93, 10, 10, 0.25);
+
+}
+
+.boxContainer {
+  max-width: 600px;
+  margin: auto;
+  background-color: rgb(253 253 253 / 43%);
+  box-shadow: -6px 10px 15px -5px rgba(74, 11, 11, 0.45);
+  border: #004da413 1px solid;
+}
+
+@media screen and (max-width: 400px) {
+  :root {
+    font-size: 12px;
+  }
+}
+
